@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Christmas Lights</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Alatsi&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
     <section class="light-bulbs">
@@ -15,5 +20,30 @@
       <div class="light-bulb theme-color-five"></div>
       <div class="light-bulb theme-color-one"></div>
     </section>
+    <section class="light-bulb-settings">
+        <h3>Settings</h3>
+        <div class="group">
+          <label>State:</label>
+          <div class="checkbox-container">
+            <input type="checkbox" class="light-switch" />
+          </div>
+          <span class="light-switch-state">off</span>
+        </div>
+      </section>
+      <div class="group">
+        <label>Interval:</label>
+        <input
+          class="interval-control"
+          type="number"
+          value="1.1"
+          step="0.1"
+          min="0.1"
+          max="2"
+        />
+      </div>
+    </section>
+
+  
+      <script src="./script.js"></script>
   </body>
 </html>
